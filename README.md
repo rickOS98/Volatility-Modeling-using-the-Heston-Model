@@ -18,7 +18,8 @@ The Heston model assumes that volatility is stochastic (changing over time) and 
 The Heston model consists of two main equations:
 
 1. **Volatility Process**:  
-   $$ v_t = v_{t-1} + \kappa (\theta - v_{t-1}) dt + \xi \sqrt{v_{t-1}} dW_v $$  
+   $$ v_t = v_{t-1} + \kappa (\theta - v_{t-1}) dt + \xi \sqrt{v_{t-1}} dW_v $$
+   
    Where:  
    - $v_t$ is the variance at time $t$ (volatility squared)
    - $\kappa$ is the rate of mean reversion
@@ -26,7 +27,7 @@ The Heston model consists of two main equations:
    - $\xi$ is the volatility of volatility
    - $dW_v$ is the Brownian motion increment for volatility
 
-2. **Stock Price Process**:  
+3. **Stock Price Process**:  
    $$ S_t = S_{t-1} \exp \left[ ( \mu - \frac{1}{2} v_{t-1}) dt + \sqrt{v_{t-1}} dW_S \right] $$  
    Where:  
    - $S_t$ is the stock price at time $t$
